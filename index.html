@@ -3,7 +3,9 @@
     <head>
         <meta http-equiv="Content-Type" charset="UTF-8">
         <script src="mis.js"></script>
+    </head>
 <body>
+    <h1 id="target"></h1>
 <script>   
 // call mis() as many times as you want.
 // It returns a new, unique set of stacks each time.
@@ -22,13 +24,15 @@ var interval=window.setInterval(function(){
     en('each')(countDown--);
 },1000);
 
+var target=document.getElementById('target');
 
 en('each',function(n){
+    target.innerHTML=(''+n);
     console.log(n);
 });
 
 en('done',function(){
-    console.log("DONE!");
+    target.innerHTML="BLASTOFF!";
     console.log("Cleaning up...");
     delete en().hooks.each;
     delete en().stacks.each;

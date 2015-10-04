@@ -1,6 +1,6 @@
 {
   "name": "mis",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "simple events",
   "main": "mis.js",
   "scripts": {

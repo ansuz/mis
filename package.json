@@ -1,0 +1,23 @@
+{
+  "name": "mis",
+  "version": "0.0.0",
+  "description": "simple events",
+  "main": "mis.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ansuz/mis.git"
+  },
+  "keywords": [
+    "mis",
+    "events"
+  ],
+  "author": "ansuz",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ansuz/mis/issues"
+  },
+  "homepage": "https://github.com/ansuz/mis"
+}

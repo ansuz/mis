@@ -5,8 +5,6 @@ function mis(opt){
     var hooks={};
     var stacks={};
 
-    var en;
-
     var place=function(hook){
         stacks[hook]=stacks[hook]||[];
         hooks[hook]=hooks[hook]||function(msg){
@@ -17,7 +15,7 @@ function mis(opt){
         return en;
     };
 
-    en=function(hook,callback){
+    var en=function(hook,callback){
         if(typeof callback === 'undefined'){
             if(hook && stacks[hook]){
                 // one argument?
